@@ -1,0 +1,138 @@
+@media (max-width:888px) {
+
+    .sidebar-receitas{
+        position:absolute;
+        top: 80px;
+        width: 190px;
+    }
+
+    .selecionado {
+        width: 180px;
+    }
+
+    .sidebar-opcao{
+        position:absolute;
+        margin-left: 10px;
+    }
+
+    .corte {
+        width: 444px;
+        height: 335px;
+    }
+
+    .corte img {
+        position: relative;
+        top: 0;
+        bottom: 0;
+    }
+
+    .main-img {
+        justify-self: center;
+        height: 335px;
+        width: 444px;
+    }
+}
+
+@media (max-width:768px) {
+    .cabecalho {
+        min-height: 75px;
+    }
+
+    .header-items {
+        gap: 20px;
+    }
+
+    .corte {
+        width: 333px;
+        height: 225px;
+    }
+
+    .corte img {
+        position: relative;
+        top: 0;
+        bottom: 0;
+    }
+
+    .sidebar-receitas {
+        position: absolute;
+        top: 80px;
+        width: 190px;
+
+    }
+
+    .sidebar-opcao {
+        margin-left: 5px;
+    }
+
+    .selecionado {
+        width: 180px;
+    }
+
+    .main-img {
+        justify-self: center;
+        height: 225px;
+        width: 333px;
+    }
+
+    .name-receita {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .ing-title {
+        font-size: 30px;
+    }
+
+    .ing-subtitle {
+        font-size: 25px;
+    }
+
+    .more-items:hover,
+    .option-button:hover {
+        transform: none;
+    }
+
+    .rodape-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rodape-text {
+        font-size: 17px;
+    }
+
+    .login-content {
+        width: 335px;
+        height: 365px;
+        position: relative;
+        left: 25px;
+        top: 25px;
+    }
+
+    .esqsenha {
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+
+    .caixa-email,
+    .caixa-senha {
+        width: 300px;
+    }
+
+    .botao-enviar {
+        position: relative;
+        left: 230px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width:420px) {
+    .sidebar-receitas {
+        position: absolute;
+        top: 80px;
+        width: 190px;
+    }
+}

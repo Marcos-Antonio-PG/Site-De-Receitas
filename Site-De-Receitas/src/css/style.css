@@ -1,0 +1,559 @@
+body{
+  width: auto;
+  height: auto;
+  background-image:url('../imagens/fundosite.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.menu{
+  display: none;
+  position: relative;
+}
+
+.filter{
+background-color: rgba(255, 255, 255, 0.5);
+z-index: 2;
+transition: background-color 0.5s ease;
+}
+
+.project-content{
+  z-index:3;
+}
+ 
+button{
+  all: unset;
+  cursor: pointer;
+}
+
+.cabecalho{
+  background-color:#FFFF00;
+  border-bottom:3px solid #0000ff;
+  box-shadow: 0 5px 15px rgba(0,0,0, 0.5);
+  transition: background-color 0.5s ease, border-bottom 0.5s ease, box-shadow 0.5s ease;
+  min-height: 75px;
+}
+
+.header-items{
+  display:flex;
+  justify-content:space-evenly;
+  gap:35px;
+}
+
+.logo{
+  margin-top:10px;
+  animation: pulsar 3s ease-in-out infinite;
+}
+
+.option-button{
+  height: 20px;
+  align-self: center;
+  transform: scale(1);
+  transition: transform 0.75s ease;
+}
+
+.option-button:hover{
+ transform: scale(1.25);
+}
+
+.nome1{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size:25px;
+  position:relative;
+  left:15px;
+  margin-bottom: 3px;
+}
+
+@keyframes pulsar{
+  0% { 
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nome2{
+  font-size:15px;
+  position:relative;
+  bottom:15px;
+  left:10px;
+  font-weight: 300;
+}
+
+.more-items{
+  height: 20px;
+  align-self: center;
+  transform: scale(1);
+  transition: transform 0.75s ease;
+}
+
+.more-items:hover{
+   transform: scale(1.25);
+}
+
+.sidebar-opcao{
+  display:none;
+  flex-direction: column;
+  gap: 5px;
+  padding:5px;
+  background-color:#E0E0E0;
+  width:150px;
+  height:65px;
+  margin-top:5px;
+  margin-left:50px;
+  border-radius:5px;
+  box-shadow: -9px 25px 15px rgba(0,0,0, 0.5);
+  opacity:0;
+  transform: translateY(-20px);
+  transition:opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+  position:absolute;
+  left:10px;
+  z-index: 10;
+}
+
+.sidebar-receitas{
+  width: 250px;
+  display:none;
+  margin-right: 10px;
+  padding:5px;
+  background-color: #E0E0E0;
+  border-radius: 3px;
+  box-shadow: -10px 40px 15px rgba(0,0,0, 0.5);
+  opacity:0;
+  transform: translateY(-20px);
+  transition:opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+  z-index: 10;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  margin-top: 5px;
+}
+
+.option-img{
+  width:66px;
+  padding:5px;
+  border-radius:7px;
+}
+
+.botao-receita{
+  display:flex;
+  align-items: center;
+}
+
+.selecionado{
+background-color: #90EE90;
+border-radius: 15px;
+width: 240px;
+height: auto;
+transition: background-color 0.6s ease, box-shadow 0.6s ease;
+box-shadow: 0 0 5px 2.5px rgba(144, 238, 144, 0.8);
+}
+
+.login-button,
+.darkmode-button{
+  width: 150px;
+}
+
+.darkmode-button:hover,
+.login-button:hover{
+background-color: #90EE90;
+border-radius: 15px;
+width: 140px;
+height: auto;
+transition: background-color 0.6s ease, box-shadow 0.6s ease;
+box-shadow: 0 0 5px 2.5px rgba(144, 238, 144, 0.8);
+}
+
+.visivel{
+  opacity: 1;
+  display:block;
+  transform:translateY(0);
+  pointer-events: auto;
+}
+
+.main-img{
+  justify-self: center;
+  height:700px;
+  width:888;
+}
+
+.corte{
+  margin-top: 30px;
+  border: 3px solid #1A1A1A;
+  box-shadow:-10px 10px 25px rgba(0,0,0, 0.5);
+  border-radius: 25px;
+  width: 888px;
+  height: 300px;
+  transition: border 0.5s ease, box-shadow 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  justify-self: center;
+}
+
+.corte img{
+   position: relative;
+  top: -200px;
+  bottom: -200px;
+}
+
+.name-receita{
+  color: #000;
+  font-family: "Libre Baskerville", sans-serif;
+  transition: color 0.5s ease;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left:15px;
+  justify-self: center;
+}
+
+.tempo-porcao{
+  color: #000;
+  transition: color 0.5s ease;
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap: 30px;
+}
+
+.tempo{
+  display:flex;
+  gap:5px;
+}
+
+.porcao{
+  display:flex;
+  gap:5px;
+}
+
+.ingredientes{
+  color: #000;
+  transition: color 0.5s ease;
+  margin:25px 15px;
+}
+
+.ing-title{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 35px;
+  padding: 5px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.ing-subtitle{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.ing-list li{
+  line-height: 1.5em;
+  position:relative;
+  margin-left: 15px;
+}
+
+.ing-list li::before{
+  content:"•";
+  color:#0000ff;
+  transition: color 0.5s ease;
+  font-size:1.5em;
+  position:absolute;
+  left:-0.5em;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.preparo{
+  margin:25px 15px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.pre-title{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size:25px;
+  padding:5px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.pre-subtitle{
+  font-family: "Libre Baskerville", sans-serif;
+  font-size:20px;
+  padding:5px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.pre-list{
+  counter-reset: item;
+  margin-left:15px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.pre-list li{
+  position:relative;
+  counter-increment: item;
+  margin-bottom:1.5em;
+  padding-left: 1.7em;
+}
+
+.pre-list li::before{
+  content: counter(item) ".";
+  position:absolute;
+  left:0;
+  width:1.7em;
+  color:#0000ff;
+  transition: color 0.5s ease;
+  font-weight: bold;
+}
+
+.wave-top{
+  transform: rotate(180deg);
+  line-height: 0;
+}
+
+#wave{
+fill:#ffff00 ;
+transition: fill 0.5s ease;
+}
+
+#waveBorder{
+  stroke: #0000ff;
+  stroke-width: 8px;
+  transition: stroke 0.5s ease;
+}
+
+.rodape-content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#ffff00;
+  transition: background-color 0.5s ease;
+  height:200px;
+}
+
+.rodape-text{
+  font-family:"Libre Baskerville", sans-serif;
+  font-size:30px;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.link{
+  color:#0000ff;
+  transition: color 0.5s ease;
+  text-decoration: underline;
+}
+
+.mostrar{
+  display:block;
+}
+
+.esconder{
+  display:none;
+}
+
+.btn-voltar{
+  padding: 20px;
+}
+
+.login-content{
+  background-color: #FFFFE0;
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 400px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  border:#CCCC00  solid 3px;
+  border-radius: 20px;
+  box-shadow: -9px 25px 15px rgba(0,0,0, 0.5);
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.login-text{
+color: #000;
+font-size: 20px;
+font-weight: 200;
+margin-left: 10px;
+padding:10px;
+transition:color 0.5s ease;
+}
+
+.login-comand{
+  margin-left: 5px;
+  color:#000;
+  transition: color 0.5s ease;
+}
+
+.caixa-email, 
+.caixa-senha{
+  margin: 5px 5px;
+  padding: 10px;
+  background-color:#FFD700;
+  transition: background-color 0.5s ease;
+  width: 400px;
+  height: 30x;
+  border-radius: 15px;
+}
+
+.esqsenha{
+  position: relative;
+  left:10px;
+  top:25px;
+  color: #0000ff;
+  transition: color 0.5s ease ;
+  text-decoration: underline;
+}
+
+.botao-enviar{
+  display: flex;
+  justify-content: center;
+  background-color: #FFD700;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  left: 330px;
+  position: relative;
+  border-radius: 15px;
+  color:#9ca400;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.caixa-email::placeholder,
+.caixa-senha::placeholder{
+  color:#9ca400;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .filter{
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .cabecalho{
+background-color:#1A1A1A;
+border-bottom:3px solid #FFFF00;
+box-shadow: 0 5px 10px rgb(251, 255, 0);
+}
+
+body.dark-mode .header-items{
+  color: #FFF;
+}
+
+body.dark-mode .sidebar-opcao,
+body.dark-mode .sidebar-receitas{
+  background-color: #404040;
+}
+
+body.dark-mode .darkmode-button,
+body.dark-mode .login-button{
+  color:#E0E0E0;
+}
+
+body.dark-mode .darkmode-button:hover,
+body.dark-mode .login-button:hover{
+  color: #000;
+}
+
+body.dark-mode .botao-receita{
+  color: #E0E0E0;
+}
+
+body.dark-mode .selecionado{
+  color: #000;
+  transition: color 0.4s ease;
+}
+
+body.dark-mode .corte{
+  border-color:#BFBFBF;
+}
+
+body.dark-mode .name-receita,
+body.dark-mode .tempo-porcao,
+body.dark-mode .ingredientes,
+body.dark-mode .ing-title,
+body.dark-mode .ing-subtitle,
+body.dark-mode .ing-list,
+body.dark-mode .preparo,
+body.dark-mode .pre-title,
+body.dark-mode .pre-subtitle,
+body.dark-mode .pre-list{
+  color:#E0E0E0;
+}
+
+body.dark-mode .ing-list li::before,
+body.dark-mode .pre-list li::before{
+  color: #FFD700;
+}
+
+body.dark-mode #wave{
+fill:#1A1A1A;
+}
+
+body.dark-mode #waveBorder{
+stroke:#ffff00;
+filter:drop-shadow(0 5px 3px rgba(251, 255, 0, 0.9));
+}
+
+body.dark-mode .rodape-content{
+  background-color: #1A1A1A;
+}
+
+body.dark-mode .rodape-text{
+  color: #E0E0E0;
+}
+
+body.dark-mode .link{
+  color:#4682B4;
+}
+
+body.dark-mode .btn-voltar{
+  color: #E0E0E0;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .login-content{
+  background-color:#1A1A1A;
+  border: #FFFF00 solid 3px;
+  box-shadow: 0 0 20px rgba(255,251,0, 1);
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease;
+}
+
+body.dark-mode .login-text,
+body.dark-mode .login-comand{
+  color: #E0E0E0;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .esqsenha{
+  color:#4682B4;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode  .caixa-email,
+body.dark-mode  .caixa-senha,
+body.dark-mode  .botao-enviar{
+color:#1A1A1A;
+box-shadow: 0 0 20px rgba(255, 251, 0, 1);
+transition: color 0.5s ease, box-shadow 0.5s ease;
+}
+
+body.dark-mode  .caixa-email::placeholder,
+body.dark-mode  .caixa-senha::placeholder{
+  color: #1A1A1A;
+  transition: 0.5s ease;
+}

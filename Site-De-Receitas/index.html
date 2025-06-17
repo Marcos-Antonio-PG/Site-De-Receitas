@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Castro Receitas</title>
+
+  <!-- Links para trazer os ícones via CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/solid.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/fontawesome.css" />
+
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/responsivity.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="body">
+  <div class="filter">
+    <div class="project-content">
+      <div class="menu mostrar">
+        <header class="cabecalho">
+
+          <div class="header-items">
+
+            <button id="option" onclick="alternarSideBar1()" class="option-button">opções</button>
+
+            <div class="logo">
+              <h2 class="nome1">CASTRO</h2>
+              <h2 class="nome2">receitas</h2>
+            </div>
+
+            <button id="more" onclick="alternarSideBar2()" class="more-items">mais receitas</button>
+
+          </div>
+
+        </header>
+
+        <div id="sideBar1" class="sidebar-opcao">
+          <button id="darkMode" onclick="darkMode()" class="darkmode-button">
+            <a id="darkModeIcon" class="fa-solid fa-sun"></a>
+            <a id="darkModeText">
+              Modo Escuro
+            </a>
+          </button>
+
+          <button id="btnLogin" onclick="mostrarLogin()" class="login-button">
+            <a class="fa-solid fa-user"></a>
+            <a>Login</a>
+          </button>
+        </div>
+
+
+        <div id="sideBar2" class="sidebar-receitas">
+          <button class="botao-receita sufle selecionado">
+            <img class="option-img" src="src/imagens/sufledechocolate.jpg" alt="Foto Suflê de Chocolate">
+            <h5>Suflê de Chocolate</h5>
+          </button>
+
+          <button class="botao-receita hamburguinho">
+            <img class="option-img" src="src/imagens/hamburguinho.jpg" alt="Foto Hamburguinho Com Molho De Alho">
+            <h5>Hamburguinho</h5>
+          </button>
+
+          <button class="botao-receita sobrecoxa">
+            <img class="option-img" src="src/imagens/sobrecoxa.jpg" alt="Foto Sobrecoxa">
+            <h5>Sobrecoxa</h5>
+          </button>
+
+          <button class="botao-receita frango">
+            <img class="option-img" src="src/imagens/frangoassado.jpg" alt="Foto Frango Fiesta">
+            <h5>Frango Assado</h5>
+          </button>
+
+          <button class="botao-receita rosca">
+            <img class="option-img" src="src/imagens/roscadechocolate.jpg" alt="Foto Rosca De Chocolate">
+            <h5>Rosca de Chocolate</h5>
+          </button>
+        </div>
+
+        <main>
+          <div class="main-content sufle mostrar">
+            <div class="corte">
+              <img class="main-img" src="src/imagens/sufledechocolate.jpg" alt="Imagem Suflê De Chocolate">
+            </div>
+            <h2 class="name-receita">Suflê De Chocolate Com Calda Quente</h2>
+            <div class="tempo-porcao">
+
+              <div class="tempo">
+                <a class="fa-solid fa-clock"></a>
+                <h5>40min</h5>
+              </div>
+
+              <div class="porcao">
+                <a class="fa-solid fa-utensils"></a>
+                <h5>4 porções</h5>
+              </div>
+            </div>
+
+            <div class="ingredientes">
+              <h2 class="ing-title">Ingredientes</h2>
+              <h3 class="ing-subtitle">Suflê</h3>
+              <ul class="ing-list">
+                <li class="list-item">200g de chocolate meio amargo picado</li>
+                <li class="list-item">1⁄4 de xícara (chá) de café coado</li>
+                <li class="list-item">3 colheres (sopa) de margarina Delícia</li>
+                <li class="list-item">1⁄4 de xícara (chá) de açúcar</li>
+                <li class="list-item">3 gemas</li>
+                <li class="list-item">1 colher (sopa) de farinha de trigo</li>
+                <li class="list-item">5 claras</li>
+              </ul>
+
+              <h3 class="ing-subtitle">Calda Quente</h3>
+              <ul class="ing-list">
+                <li class="list-item">1⁄2 xícara (chá) de chocolate em pó</li>
+                <li class="list-item">1/3 de xícara (chá) de açúcar</li>
+                <li class="list-item">1 colher (sopa) de margarina Delícia</li>
+                <li class="list-item">1/3 de xícara (chá) de leite</li>
+              </ul>
+            </div>
+
+            <div class="preparo">
+              <h2 class="pre-title">Modo De Preparo</h2>
+              <h3 class="pre-subtitle">Suflê</h3>
+              <ol class="pre-list">
+                <li class="pre-item">No microondas ou em banho-maria, derreta o chocolate misturado com o café.</li>
+                <li class="pre-item">Retire do micro-ondas e adicione: a margarina Delícia, o açúcar, as gemas e a
+                  farinha
+                  de trigo. Misture até formar uma massa lisa.</li>
+                <li class="pre-item">Bata as claras em neve e incorpore à massa delicadamente.</li>
+                <li class="pre-item">Distribua a massa em 6 ramequins untados com margarina Delícia.</li>
+                <li class="pre-item">Coloque os ramequins em uma assadeira com água fervente até a metade da altura
+                  dos
+                  ramequins e leve ao forno preaquecido a 200 graus por aproximadamente 20 minutos ou até ficar assado.
+                </li>
+              </ol>
+
+              <h3 class="pre-subtitle">Calda Quente</h3>
+              <ol class="pre-list">
+                <li class="pre-item">Em uma panela coloque: o chocolate em pó, o açúcar, a margarina Delícia e o
+                  leite.
+                </li>
+                <li class="pre-item">Leve ao fogo alto e mexa bem com um fuê até ferver.</li>
+                <li class="pre-item">Depois que ferver, mexa por mais 3 minutos ou até a calda engrossar.</li>
+                <li class="pre-item">Desligue o fogo e sirva quente com os suflês.</li>
+              </ol>
+
+            </div>
+
+          </div>
+
+           <div class="main-content rosca esconder">
+              <div class="corte">
+                <img class="main-img" src="src/imagens/roscadechocolate.jpg" alt="Imagem Rosca De Chocolate">
+              </div>
+              <h2 class="name-receita">Rosca De Chocolate</h2>
+              <div class="tempo-porcao">
+
+                <div class="tempo">
+                  <a class="fa-solid fa-clock"></a>
+                  <h5>90min</h5>
+                </div>
+
+                <div class="porcao">
+                  <a class="fa-solid fa-utensils"></a>
+                  <h5>12 porções</h5>
+                </div>
+              </div>
+
+              <div class="ingredientes">
+                <h2 class="ing-title">Ingredientes</h2>
+                <ul class="ing-list">
+                  <li class="list-item">Delícia Supreme 100 g</li>
+                  <li class="list-item">Fermento fresco 30 g</li>
+                  <li class="list-item">Leite 100 ml</li>
+                  <li class="list-item">Açúcar 80 g</li>
+                  <li class="list-item">Ovos 2 un</li>
+                  <li class="list-item">Essência de baunilha 5 ml</li>
+                  <li class="list-item">Farinha de trigo 440 g</li>
+                  <li class="list-item">Sal 2 g</li>
+                  <li class="list-item">Creme de chocolate com avelã 200 g</li>
+                  <li class="list-item">Leite ou gemas, para pincelar quanto baste</li>
+                </ul>
+              </div>
+
+              <div class="preparo">
+                <h2 class="pre-title">Modo De Preparo</h2>
+                <ol class="pre-list">
+                  <li class="pre-item">Na tigela da batedeira desmanche o fermento no leite.</li>
+                  <li class="pre-item">Adicione o açúcar, os ovos, a margarina e a baunilha e bata, com o globo, por 1
+                    minuto.
+                  </li>
+                  <li class="pre-item">Aos poucos, adicione a farinha e o sal, e troque pela pá para bater pão (ou sove
+                    com as
+                    mãos). Bata por cerca de 10 minutos até obter uma massa bem lisa e enxuta (se necessário adicione
+                    mais
+                    farinha).</li>
+                  <li class="pre-item">Faça uma bola e cubra a tigela com um filme plástico ou um pano. Reserve até que
+                    a
+                    massa dobre de volume.</li>
+                  <li class="pre-item">Em uma superfície polvilhada com farinha divida a massa em 2 partes e abra 2
+                    retângulos, um de cada vez, medindo cerca de 40 x30cm.</li>
+                  <li class="pre-item">Espalhe o creme de chocolate com avelã e enrole como um rocambole.</li>
+                  <li class="pre-item">Corte em 6 partes iguais e coloque dentro de uma fôrma redonda de 20cm, untada.
+                    Faça o
+                    mesmo com o outro retângulo.</li>
+                  <li class="pre-item">Deixe crescer até dobrar o volume.</li>
+                  <li class="pre-item">Pincele com leite ou com gemas e asse no forno preaquecido na temperatura 180ºC
+                    por
+                    cerca de 30 minutos ou até dourar acentuadamente.</li>
+                </ol>
+              </div>
+
+            </div>
+
+          <div class="main-content hamburguinho esconder">
+            <div class="corte">
+              <img class="main-img" src="src/imagens/hamburguinho.jpg" alt="Imagem hamburginho Com Molho De Alho">
+            </div>
+            <h2 class="name-receita">Hamburguinho Com Molho De Alho</h2>
+            <div class="tempo-porcao">
+
+              <div class="tempo">
+                <a class="fa-solid fa-clock"></a>
+                <h5>50min</h5>
+              </div>
+
+              <div class="porcao">
+                <a class="fa-solid fa-utensils"></a>
+                <h5>4 porções</h5>
+              </div>
+            </div>
+
+            <div class="ingredientes">
+              <h2 class="ing-title">Ingredientes</h2>
+              <h3 class="ing-subtitle">Hambúrguer</h3>
+              <ul class="ing-list">
+                <li class="list-item">Delícia Supreme Sabor Manteiga 24g</li>
+                <li class="list-item">Patinho 500 g</li>
+                <li class="list-item">Bacon bem picado 20 g</li>
+                <li class="list-item">Cebola média bem picada 30 g</li>
+                <li class="list-item">Sal e pimenta do reino quanto baste</li>
+              </ul>
+
+              <h3 class="ing-subtitle">Molho</h3>
+              <ul class="ing-list">
+                <li class="list-item">2 colheres (sopa) de Delícia Supreme Sabor Manteiga</li>
+                <li class="list-item">3 dentes de alho picados</li>
+                <li class="list-item">100 ml de creme de leite</li>
+                <li class="list-item">1/2 xícara de maionese</li>
+                <li class="list-item">1/2 colher (chá) de sal</li>
+                <li class="list-item">1 pitada de pimenta do reino</li>
+                <li class="list-item">1 pitada de orégano seco</li>
+              </ul>
+
+              <h3 class="ing-subtitle">Montagem</h3>
+              <ul class="ing-list">
+                <li class="list-item">Mini pães de hambúrguer 120 g</li>
+                <li class="list-item">Tomate grande 100 g</li>
+                <li class="list-item">Folhas de ervas frescas quanto baste</li>
+              </ul>
+            </div>
+
+            <div class="preparo">
+              <h2 class="pre-title">Modo De Preparo</h2>
+              <h3 class="pre-subtitle">Hambúrguer</h3>
+              <ol class="pre-list">
+                <li class="pre-item">Em um processador, leve a carne em pedaços e o bacon para pulsar, só para picar a
+                  carne.
+                </li>
+                <li>Adicione a cebola e torne a pulsar.</li>
+                <li>Retire do processador, tempere com a pimenta do reino e corrija o sal, se necessário.</li>
+                <li>Separe a carne em 4 porções, modele no formato de mini hambúrgueres e leve-os para fritar em
+                  frigideira
+                  quente, adicionada de margarina delicia_supreme_sabor_manteiga, em fogo médio-alto, até que cozinhem
+                  por
+                  dentro e dourem por fora. Reserve-os quentes.</li>
+              </ol>
+
+              <h3 class="pre-subtitle">Molho</h3>
+              <ol class="pre-list">
+                <li class="pre-item">Leve todos os ingredientes ao liquidificador e bata até ficar um creme homogêneo.
+                  Para
+                  dar um toque especial, acrescente raspas de casca de limão sobre o molho.</li>
+
+                <h3 class="pre-subtitle">Montagem</h3>
+                <li class="pre-item">Corte os pães na metade.</li>
+                <li class="pre-item">Em uma frigideira, adicionada de margarina delicia_supreme_sabor_manteiga derretida
+                  e
+                  bem
+                  aquecida, leve as bordas internas dos pães para dourar.</li>
+                <li class="pre-item">Sobre a metade de baixo dos pães, coloque uma fatia de tomate e em seguida os
+                  hambúrgueres grelhados.</li>
+                <li clasz="pre-item">Cubra com o molho de alho. Pode ser acrescentado mostarda.</li>
+              </ol>
+
+            </div>
+
+          </div>
+
+          <div class="main-content frango esconder">
+              <div class="corte">
+                <img class="main-img" src="src/imagens/frangoassado.jpg" alt="Imagem Frango Seara">
+              </div>
+              <h2 class="name-receita">Fiesta Seara Assado Com Farofa De Legumes</h2>
+              <div class="tempo-porcao">
+
+                <div class="tempo">
+                  <a class="fa-solid fa-clock"></a>
+                  <h5>180min</h5>
+                </div>
+
+                <div class="porcao">
+                  <a class="fa-solid fa-utensils"></a>
+                  <h5>9 porções</h5>
+                </div>
+              </div>
+
+              <div class="ingredientes">
+                <h2 class="ing-title">Ingredientes</h2>
+                <h3 class="ing-subtitle">Fiesta Seara</h3>
+                <ul class="ing-list">
+                  <li class="list-item">Delícia Supreme 350 g</li>
+                  <li class="list-item">Fiesta Searadescongelado 1 un</li>
+                  <li class="list-item">Suco de limão 1 un</li>
+                  <li class="list-item">Vinho seco branco 250 ml</li>
+                  <li class="list-item">Dentes de alho 6 un</li>
+                  <li class="list-item">Cebola grande cortada em quartos 1 un</li>
+                  <li class="list-item">Folha de louro 1 un</li>
+                  <li class="list-item">sal e pimenta-do-reino quanto baste</li>
+                </ul>
+
+                <h3 class="ing-subtitle">Farofa</h3>
+                <ul class="ing-list">
+                  <li class="list-item">Cebola picada 1 un</li>
+                  <li class="list-item">Alho 4 un</li>
+                  <li class="list-item">Tomates sem pele, sem sementes e picados 3 un</li>
+                  <li class="list-item">Cenoura pré cozida, picadinha 120 g</li>
+                  <li class="list-item">Abobrinha, média cortada em cubinhos 1 un</li>
+                  <li class="list-item">Azeitonas pretas sem caroço e fatiadas 5 un</li>
+                  <li class="list-item">Azeitonas verdes sem caroços e fatiadas 5 un</li>
+                  <li class="list-item">Farinha de mandioca torrada 150g</li>
+                  <li class="list-item">Farinha de milho amarela 225 g</li>
+                  <li class="list-item">Ovos picadinhos 2 un</li>
+                  <li class="list-item">Salsa e cebolinha frescas picadas quanto baste</li>
+                </ul>
+              </div>
+
+              <div class="preparo">
+                <h2 class="pre-title">Modo De Preparo</h2>
+                <h3 class="pre-subtitle">Fiesta Seara</h3>
+                <ol class="pre-list">
+                  <li class="pre-item">Limpe o Fiesta Seara, inclusive por dentro, com suco de limão.</li>
+                  <li class="pre-item">Aguarde 10 minutos e despeje água quente.</li>
+                  <li class="pre-item">Esfregue o alho e a cebola sobre toda a carne e reserve.</li>
+                  <li class="pre-item">Em uma vasilha grande, acomode o Fiesta Seara e adicione os ingredientes do
+                    tempero.
+                  </li>
+                  <li class="pre-item">Tampe com papel alumínio e deixe descansar na geladeira por uma noite.</li>
+                </ol>
+
+                <h3 class="pre-subtitle">Farofa</h3>
+
+                <ol class="pre-list">
+                  <li class="pre-item">Em uma frigideira, leve ¼ de xícara (chá) da margarina Delícia Supreme para
+                    aquecer.
+                    Junte a farinha de mandioca e toste.</li>
+                  <li class="pre-item">Tempere com sal e pimenta do reino e reserve.</li>
+                  <li class="pre-item">Em uma panela, leve a margarina Delícia Supreme para aquecer.</li>
+                  <li class="pre-item">Adicione o alho, a cebola e frite até ficar transparente.</li>
+                  <li class="pre-item">Adicione os tomates, as cenouras, as abobrinhas, as azeitonas, e refogue.</li>
+                  <li class="pre-item">Adicione a farinha de milho e misture.</li>
+                  <li class="pre-item">Adicione a farinha de mandioca, acerte o sal, adicione os ovos picados, a salsa e
+                    cebolinha, misture bem e desligue o fogo.</li>
+                  <li class="pre-item">Retire o Fiesta Seara da marinada, enxugue-o bem e recheie com a farofa sem
+                    encher
+                    demais.</li>
+                  <li class="pre-item">Com agulha e linha grossa, costure o papo e a abertura principal.</li>
+                  <li class="pre-item">Amarre as extremidades das coxas e prenda com linha ou palito de madeira as asas
+                    sobre
+                    o peito.</li>
+                  <li class="pre-item">Adicione sal por toda a superfície e besunte a ave com ¾ xícara (chá) de
+                    margarina
+                    Delícia Supreme ( caprichando entre as assas, o peito, as coxas e em todas as dobras).</li>
+                  <li class="pre-item">Coloque em uma assadeira, adicione os ingredientes da marinada, tampe com papel
+                    alumínio e leve para assar em forno preaquecido, à temperatura de 180°C por aproximadamente 2 horas.
+                  </li>
+                  <li class="pre-item">Retire o papel alumínio e deixe dourar.</li>
+                </ol>
+
+              </div>
+
+            </div>
+
+          <div class="main-content sobrecoxa esconder">
+            <div class="corte">
+              <img class="main-img" src="src/imagens/sobrecoxa.jpg"
+                alt="Imagem Sobrecoxa Com Salada Morna de Mix De Batata">
+            </div>
+            <h2 class="name-receita">Sobrecoxa Assada Com Salada Morna De Mix Batata</h2>
+            <div class="tempo-porcao">
+
+              <div class="tempo">
+                <a class="fa-solid fa-clock"></a>
+                <h5>60min</h5>
+              </div>
+
+              <div class="porcao">
+                <a class="fa-solid fa-utensils"></a>
+                <h5>4 porções</h5>
+              </div>
+            </div>
+
+            <div class="ingredientes">
+              <h2 class="ing-title">Ingredientes</h2>
+              <h3 class="ing-subtitle">Sobrecoxas</h3>
+              <ul class="ing-list">
+                <li class="list-item">1kg sobrecoxas</li>
+                <li class="list-item">3 colheres (sopa) de margarina Delícia Supreme</li>
+                <li class="list-item">4 dentes de alho esmagados</li>
+                <li class="list-item">Sumo de 1 limão</li>
+                <li class="list-item">Sal e pimenta-do-reino moída na hora a gosto</li>
+                <li class="list-item">1 xícara (chá) de suco de laranja</li>
+              </ul>
+
+              <h3 class="ing-subtitle">Salada Morna De Mix De Batatas</h3>
+              <ul class="ing-list">
+                <li class="list-item">2 batatas inglesas grandes</li>
+                <li class="list-item">2 batatas doces</li>
+                <li class="list-item">2 batatas baroas</li>
+                <li class="list-item">1 pitada de sal</li>
+                <li class="list-item">4 colheres (sopa) de margarina Delícia Supreme</li>
+                <li class="list-item">1 colher (sopa) de ervas picadas (salsa/manjericão/tomilho)</li>
+                <li class="list-item">1 colher (chá) de pimenta dedo-de-moça picada</li>
+                <li class="list-item">2 colheres (sopa) de vinagre balsâmico</li>
+              </ul>
+
+              <div class="preparo">
+                <h2 class="pre-title">Modo De Preparo</h2>
+                <h3 class="pre-subtitle">Frango</h3>
+                <ol class="pre-list">
+                  <li class="pre-item">Em uma travessa, coloque as sobrecoxas.</li>
+                  <li class="pre-item">Misture a margarina Delícia Supreme com o sumo de limão, o alho, o sal e a
+                    pimenta.
+                  </li>
+                  <li class="pre-item">Com essa mistura, besunte as sobrecoxas.</li>
+                  <li class="pre-item">Por cima despeje o suco de laranja.</li>
+                  <li class="pre-item">Cubra com papel alumínio e leve ao forno preaquecido a 180 graus por 20 minutos.
+                  </li>
+                  <li class="pre-item">Retire o papel alumínio e regue com a marinada.</li>
+                  <li class="pre-item">Volte ao forno até dourar.</li>
+                </ol>
+
+                <h3 class="pre-subtitle">Salada</h3>
+                <ol class="pre-list">
+                  <li class="pre-item">Laves e descasque as batatas.</li>
+                  <li class="pre-item">Em uma panela, coloque as batatas, cubra com água suficiente para cozinhar e
+                    adicione o
+                    sal.</li>
+                  <li class="pre-item">Cozinhe até ficarem macias e escorra.</li>
+                  <li class="pre-item">Em uma frigideira, coloque a margarina Delícia Supreme, as ervas, e a pimenta.
+                  </li>
+                  <li class="pre-item">Coloque as batatas e salteie.</li>
+                  <li class="pre-item">Transfira para uma saladeira e tempere com o balsâmico.</li>
+                  <li class="pre-item">Sirva o frango com a salada ainda morna.</li>
+                </ol>
+
+              </div>
+
+            </div>
+
+        </main>
+      </div>
+
+      <div  class="login-screen esconder">
+        <button id="btnVoltar" onclick="mostrarMenu()" class="btn-voltar">
+          <a class="fa-solid fa-arrow-left"></a>
+          <a>Voltar</a>
+        </button>
+
+        <div class="login-content">
+          <form class="login-panel" action="#" method="post">
+            <h2 class="login-text">Para conseguir favoritar receitas, faça login!</h2>
+
+            <label class="login-comand" for="email">E-mail:</label>
+            <input class="caixa-email" type="email" id="email" placeholder="Digite seu E-mail" required><br><br>
+
+            <label class="login-comand" for="password">Digite sua senha:</label>
+            <input class="caixa-senha" type="password" id="password" placeholder="Sua senha"><br><br>
+
+            <button class="esqsenha">Esqueceu sua senha?</button>
+
+            <button id="btnEnviar" class="botao-enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="rodape">
+        <div class="wave-top">
+          <svg overflow="visible" viewBox="0 0 500 150">
+            <path id="waveBorder" d="M-10,10 C150,80 350,0 500,25"></path>
+            <path id="wave" d="M0,10 C150,80 350,0 500,30 L500,0 L0,0 Z"></path>
+          </svg>
+        </div>
+
+        <div class="rodape-content">
+          <p class="rodape-text">Site Teste</p>
+          <p class="rodape-text">Feito apenas para meios de aprendizado</p>
+          <p class="rodape-text">inspirado em:</p>
+          <a class="link" href="https://www.delicia.com.br/">delicia.com.br</a>
+        </div>
+      </footer>
+
+      <script src="src/javascript/script.js"></script>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
